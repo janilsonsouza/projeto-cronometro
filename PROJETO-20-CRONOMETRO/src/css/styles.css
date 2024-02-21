@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+body {
+    flex-direction: column;
+
+    background-color: #5E96ED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover; /* Para cobrir todo o corpo */
+    background-position: center; /* Para centralizar a imagem */
+    overflow-y: auto;
+}
+
+
+#timer {
+    background-color: #5E96ED;
+    
+    height: 250px;
+    width: 250px;
+    border: 3px solid #0400f3;
+    margin-bottom: 1.5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 4rem;
+}
+
+#actions {
+    display: flex;
+    gap: 0.5rem;
+    
+}
+
+#actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    color: #262626;
+    background-color: #e0e7ff;
+    transition: background-color .2s ease-in;
+    cursor: pointer;
+    background-color: #5E96ED;
+    
+}
+
+#actions button:hover {
+    background-color: #c4b5fd;
+}
+
+#marks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    color: #ffffff;
+}
+
+#marks-list p:first-child {
+    margin-top: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    min-height: 80vh; /* Alterado para uma altura mínima flexível */
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: url('../img/fundo.png');
+    overflow-y: auto; /* Adicionando rolagem vertical */
+    
+}
+
+h1 {
+    margin-bottom: 80px;
+    color: #ffffff;
+}
